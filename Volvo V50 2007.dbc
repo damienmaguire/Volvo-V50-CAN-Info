@@ -1,0 +1,82 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_: 
+BU_: ECM PSP UNK 
+BO_ 455081986 Pump_Status: 8 PSP
+   SG_ Pump_Status : 51|12@0+ (1,0) [0|1] "" ECM
+
+BO_ 34619702 Power_Steering_Pump_Speed: 0 PSP
+   SG_ Power_Steering_Pump_SpeedSig417 : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 8388614 MSG1: 8 ECM
+   SG_ RPM : 63|8@0+ (64,-7040) [0|1] "" Vector__XXX
+
+BO_ 16779308 Dashboard: 0 UNK
+   SG_ Dashboard_Brightness : 3|4@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Light_Sensor : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 419430438 Steering_Wheel_Buttons: 0 UNK
+   SG_ Steering_Wheel_ButtonsSig278 : 61|6@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 434110470 UNKMsg352: 0 UNK
+   SG_ Ignition_Status : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_ "GenMsgBackgroundColor" BO_ 455081986 "#d4fffe";
+BA_ "GenMsgForegroundColor" BO_ 34619702 "#000000";
+BA_ "GenMsgBackgroundColor" BO_ 34619702 "#99fdff";
+BA_ "GenMsgForegroundColor" BO_ 8388614 "#000000";
+BA_ "GenMsgBackgroundColor" BO_ 8388614 "#fff45a";
+BA_ "GenMsgBackgroundColor" BO_ 16779308 "#8e88d0";
+BA_ "GenMsgBackgroundColor" BO_ 419430438 "#ffaaff";
+BA_ "GenMsgBackgroundColor" BO_ 434110470 "#ff7878";
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 0;
+CM_ BU_ ECM "Engine Control Module";
+CM_ BU_ PSP "Power Steering Pump (not the official ECU name)";
+CM_ BU_ UNK "Unknown";
+VAL_ 455081986 Pump_Status 1105 "Initial_Value" 3953 "Idle" 3955 "Pump_Started";
+VAL_ 8388614 RPM 0 "Engine_Off" 0 "";
+VAL_ 434110470 Ignition_Status 1 "Ignition_On" 0 "Ignition_Off";
